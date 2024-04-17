@@ -13,6 +13,7 @@ public class CharExamples {
 
     System.out.println(letterOne);
     System.out.println(letterTwo);
+
     System.out.println(letterThree);
     System.out.println(letterFour);
 

@@ -38,7 +38,12 @@ public class Quotes {
 
         quantity = 3;
 
-        
+
+        char test = 'I';
+
+        System.out.println(test); //prints 73 the assined number to character I
+        System.out.println(test+2); //prints 75 the assined number of a character that is 2 numbers away from I -- K
+        System.out.println((char)(test+2)); //prints characater K
 
 
     }
