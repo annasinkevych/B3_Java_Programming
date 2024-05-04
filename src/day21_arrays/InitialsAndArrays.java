@@ -38,8 +38,5 @@ public class InitialsAndArrays {
             //System.out.println((names[i].trim().charAt(0)+"").toUpperCase() + (names[i].trim().substring(eachFullName.indexOf(" ")).trim().charAt(0)+"").toUpperCase());
 
         }
-
-
-
     }
 }
