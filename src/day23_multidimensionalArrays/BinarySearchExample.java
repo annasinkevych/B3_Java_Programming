@@ -12,6 +12,5 @@ public class BinarySearchExample {
         System.out.println(Arrays.binarySearch(nums, 4)); //returns the position of searched element
         System.out.println(Arrays.binarySearch(nums, 100)); //returns the position of searched element
         System.out.println(Arrays.binarySearch(nums, 200)); //returns the position of searched element
-
     }
 }

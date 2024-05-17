@@ -6,7 +6,7 @@ public class SortStringExample {
 
     public static void main(String[] args) {
 
-        //only compares the first characters to sort them in the ascending order based on the ASCII table
+        //only compares the first characters to sort them in the ascending order based on the ASCII table -- lexicographic order from a-z
         String [] arr = {" java", "Hello", "$Dollar", "Zelle", "soft skills", "4four", "6Six", "Hi", "SIX"};
 
 
