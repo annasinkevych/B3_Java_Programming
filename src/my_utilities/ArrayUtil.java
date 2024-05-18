@@ -116,8 +116,12 @@ public class ArrayUtil {
         return arr2;
     }
 
-    //TODO: create a reusable method that can take 2 int arrays and return one array combined and sorted
-
+    /**
+     * Method that accepts two int arrays and returns a combination of both
+     * @param a - int array
+     * @param b - int array
+     * @return returns an int array that is a combination of 2 arrays
+     */
     public static int [] combineArrays(int[] a, int[] b)
     {
         int [] combined = Arrays.copyOf(a, a.length + b.length);
@@ -126,8 +130,12 @@ public class ArrayUtil {
             combined[i] = b[i - a.length]; //starting i = 6, so 6-6 = 0, second iteration i = 7, so 7 - 6 = 1...
             //[3, 1, 5, 7, 3, 23, 24, 9, 5, 7, 3, 60]
         }
+
         return combined;
     }
+
+
+    //TODO: create a reusable method that can take 2 String arrays and return one array combined
 
     /**
      * Method that accepts an int array and a number and returns an index of that number
