@@ -20,7 +20,6 @@ public class ConvertArrayToList {
 //        ArrayList <Integer> list2 = new ArrayList<>(Arrays.stream(arr2).boxed().collect(Collectors.toList()));
 
 
-
 //        list.addAll( Arrays.asList(arr2));
 
 //        System.out.println(list2);//[1, 2, 3]
