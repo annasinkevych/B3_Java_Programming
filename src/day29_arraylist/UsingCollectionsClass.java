@@ -54,6 +54,7 @@ public class UsingCollectionsClass {
         String str = "aabbbcccdde";
         ArrayList <String> word = new ArrayList<>(Arrays.asList(str.split("")));//split reruns an array of strings
 
+        System.out.println(word);
         String checked = "";
         for (String each: word)
         {
