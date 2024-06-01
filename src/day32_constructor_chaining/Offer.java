@@ -4,8 +4,8 @@ public class Offer {
 
     String location;
     String company;
-    double salary;
-    boolean isFullTime;
+    public double salary;
+    public boolean isFullTime;
     int numberOfPTO;
 
     public Offer(String location, String company)
@@ -31,12 +31,21 @@ public class Offer {
 
     @Override
     public String toString() {
-        return "Offer: " +
-                "location='" + location + '\'' +
-                ", company='" + company + '\'' +
-                ", salary=" + salary +
-                ", isFullTime=" + isFullTime +
-                ", numberOfPTO=" + numberOfPTO;
+
+        String info = "\n" + company + " is located in " + location;
+
+        info += "\n" + (salary > 0 ? salary : "");
+
+        info += "\n" + (isFullTime ? "Full Time" : "");
+
+        info += "\n" + (numberOfPTO > 0 ? numberOfPTO : "");
+return info;
+//        return "Offer: " +
+//                "location='" + location + '\'' +
+//                ", company='" + company + '\'' +
+//                ", salary=" + salary +
+//                ", isFullTime=" + isFullTime +
+//                ", numberOfPTO=" + numberOfPTO;
     }
 
     public static void main(String[] args) {
