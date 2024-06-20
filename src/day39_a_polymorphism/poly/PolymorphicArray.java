@@ -51,7 +51,7 @@ public class PolymorphicArray {
         obj1[0] = new D();
         obj1[1] = new D();
         System.out.println(Arrays.toString(obj1));
-        //obj1[1] = new C1();
+//        obj1[1] = new C1();
 
 
         A [] obj2 = new A[5]; // POLYMORPHIC array
