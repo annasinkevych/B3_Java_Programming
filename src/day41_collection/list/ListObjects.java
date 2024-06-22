@@ -20,6 +20,9 @@ public class ListObjects {
       System.out.println(list2); //[A, B, C, D, null]
       System.out.println(list2.get(3));
 
+      Collections.reverse(list2);
+      Collections.sort(list2);
+
       System.out.println("=============================");
       List<String> list3 = new LinkedList<>();
       list3.add("A");
@@ -43,5 +46,7 @@ public class ListObjects {
       int [] arr1 = new int [4];
       int [] arr2 = Arrays.copyOf(arr1, arr1.length+2);
       System.out.println(Arrays.toString(arr2)); //[0, 0, 0, 0, 0, 0]
+
+
   }
 }
