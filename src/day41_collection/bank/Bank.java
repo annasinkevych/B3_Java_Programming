@@ -13,15 +13,26 @@ public class Bank {
     }
 
     //login
-    public void login(String username, String password) throws InvalidCredentialException{
+    public void login(String username, String password){
         if(!username.equals("loopcamp")){
-            System.out.println("Not valid username");
-            throw new InvalidCredentialException("Invalid username");
+           // System.out.println("Not valid username");
+            try{
+                throw new InvalidCredentialException("Invalid username");
+            }catch(InvalidCredentialException e){
+                System.out.println(e.getMessage());
+            }
+
         }
 
         if(!password.equals("Test123@")){
-            System.out.println("Not valid password");
-            throw new InvalidCredentialException("Not valid password");
+            //System.out.println("Not valid password");
+            try{
+                throw new InvalidCredentialException("Not valid password");
+            }
+            catch(InvalidCredentialException e){
+                System.out.println(e.getMessage());
+            }
+
 
         }
     }
